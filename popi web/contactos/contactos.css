@@ -1,0 +1,218 @@
+@import url('https://fonts.googleapis.com/css2?family=Lemon&family=Roboto:wght@300&display=swap');
+* {box-sizing:border-box}
+header, main, footer {
+  overflow: hidden;
+}
+body {
+    background-image: url("C:/Users/santiago/Desktop/popi web/fotos/fondo2.jpg");
+    background-position: center;
+      background-repeat: no-repeat;
+      background-size: cover;
+  }
+  
+  body {
+	margin: 0;
+	padding: 0;
+	font-family: Arial, sans-serif;
+}
+
+header {
+	display: flex;
+	align-items: center;
+	background-color: #333;
+	color: #fff;
+	padding: 10px;
+}
+.link{
+    flex: 1;
+    width: 15%;
+    height: 100px;  
+}
+.logo {
+    flex: 1;
+    width: 100%;
+    height: 100px;
+    background-image: url("C:/Users/santiago/Desktop/popi web/fotos/logo.jpg");
+    background-position: center;
+      background-repeat: no-repeat;
+      background-size: cover;
+}
+
+
+.titulo {
+	flex: 2;
+	text-align: center;
+}
+
+
+.contenedor {
+    display: grid;
+	grid-template-columns: 66% 33%;
+	grid-gap: 20px;
+    padding: 20px;
+    margin-bottom: 218px;
+}
+
+footer {
+	background-color: #333;
+	color: #fff;
+	text-align: center;
+	padding: 10px;
+}body {
+	margin: 0;
+	padding: 0;
+	font-family: Arial, sans-serif;
+}
+
+header {
+	display: flex;
+	align-items: center;
+	background-color: #333;
+	color: #fff;
+	padding: 10px;
+}
+
+.logo {
+    flex: 1;
+    width: 10%;
+    height: 100px;
+}
+.logo img{
+    width: 15%;
+    height: 100px;
+    height: 100px;
+}
+
+.titulo {
+	flex: 2;
+	text-align: center;
+}
+
+
+.columna-1,
+.columna-2 {
+    padding: 10px;
+    height: 800px;
+    width: 100%;
+    
+}
+.columna-1{
+    background-color: #01000a;
+}
+.columna-2{
+    background-color: #01000a;
+    display: grid;
+    grid-template-rows: 80% 20%;
+}
+
+footer {
+	background-color: #333;
+	color: #fff;
+	text-align: center;
+	padding: 10px;
+}
+.fa-facebook {
+    background: #3B5998;
+    color: white;
+  }
+  .fa {
+    padding: 30px;
+    font-size: 50px;
+    width: 70px;
+    text-align: center;
+    text-decoration: none;
+    margin: 5px 2px;
+    border-radius: 50%;
+  }
+  
+  .fa:hover {
+      opacity: 0.7;
+  }
+  .fa-instagram {
+    background: #125688;
+    color: white;
+  }
+  
+  input[type=text], select, textarea {
+    width: 100%;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    margin-top: 6px;
+    margin-bottom: 16px;
+    resize: vertical;
+  }
+  
+  input[type=submit] {
+    background-color: #04AA6D;
+    color: white;
+    padding: 10px 10px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  
+  input[type=submit]:hover {
+    background-color: #45a049;
+  }
+  
+  .container {
+    border-radius: 5px;
+    padding: 20px;
+  }
+.inp{
+    color: white;
+}
+  footer{
+    color: aliceblue;
+    background-color: #01000a;
+    display: grid;
+    grid-template-columns: 70% 15% 15%;
+  }
+  .foot{
+    width: 100%;
+    height: 100px;
+  }
+  .f1{
+    display: flex;
+    align-items: center;
+  }
+  .f2{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .f3{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .fa-facebook {
+    background: #3B5998;
+    color: white;
+  }
+  .fa {
+    padding: 30px;
+    font-size: 50px;
+    width: 70px;
+    text-align: center;
+    text-decoration: none;
+    margin: 5px 2px;
+    border-radius: 50%;
+  }
+  
+  .fa:hover {
+      opacity: 0.7;
+  }
+  .fa-instagram {
+    background: #125688;
+    color: white;
+  }
+.columna-2 a{
+        color: white;
+        text-decoration: underline;
+}
+.columna-2{
+    color: white;
+}
