@@ -3,9 +3,230 @@
   <head>
     <meta charset="utf-8">
     <title>Disconnect</title>
-<link rel="stylesheet" href="estilo.css">
+
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-  </head>
+<style>
+  @import url('https://fonts.googleapis.com/css2?family=Lemon&family=Roboto:wght@300&display=swap');
+  @import url('https://fonts.googleapis.com/css2?family=Righteous&display=swap');
+* {
+  box-sizing: border-box;
+}
+
+header, main, footer {
+  overflow: hidden;
+}
+
+body {
+  background-image: url("fotos/fondo2.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+header {
+  background-color: #333;
+}
+
+#encabezado {
+  width: 100%;
+  height: 150px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#logo {
+  width: auto;
+  height: 120px;
+  border-radius: 2px;
+}
+
+#logo img {
+  width: 100%;
+  height: 120px;
+}
+
+.menu {
+  overflow: hidden;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); /* Cambio aquí */
+  grid-template-rows: auto;
+  justify-content: center;
+}
+
+.menu a {
+  font-size: 22px;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  font-family: 'Righteous', cursive;
+  text-decoration: none;
+  
+}
+
+.menu a:hover {
+  background-color: white;
+  color: black;
+}
+
+.grid-layout {
+  width: 100%;
+  display: grid;
+  grid-template-areas: 'foto foto foto foto foto foto'
+                       'chico chico chico juego juego juego'
+                       'friends friends amigos amigos amigos amigos';
+}
+
+.caja {
+  background-color: gray;
+  width: 100%;
+  height: 800px;
+}
+
+.c1 {
+  background-image: url("fotos/logo2.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover; 
+}
+
+.c2 {
+  background-image: url("fotos/game.jpg");
+  grid-area: chico;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  margin: 20px;
+}
+
+.linklogo {
+  width: 100%;
+  height: 800px;
+  grid-area: foto;
+  margin-top: 5px;
+}
+
+.c3 {
+  background-color: #01000a;
+  grid-area: juego;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  margin: 20px;
+}
+
+.c4 {
+  background-color: #01000a;
+  grid-area: friends;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  margin: 20px;
+}
+
+.c5 {
+  grid-area: amigos;
+  background-image: url("fotos/amigos2.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  margin: 20px;
+}
+
+h1 {
+  font-family: 'Righteous', cursive;
+  font-size: 60px;
+}
+
+footer{
+  color: aliceblue;
+  background-color: #01000a;
+  display: grid;
+  grid-template-columns: 70% 15% 15%;
+}
+.foot{
+  width: 100%;
+  height: 100px;
+}
+.f1{
+  display: flex;
+  align-items: center;
+}
+.f2{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.f3{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.fa-facebook {
+  background: #3B5998;
+  color: white;
+}
+.fa {
+  padding: 30px;
+  font-size: 50px;
+  width: 70px;
+  text-align: center;
+  text-decoration: none;
+  margin: 5px 2px;
+  border-radius: 50%;
+}
+
+.fa:hover {
+    opacity: 0.7;
+}
+.fa-instagram {
+  background: #125688;
+  color: white;
+}
+
+/* Media queries */
+
+@media screen and (max-width: 800px) {
+  .menu {
+    grid-template-columns: 1fr;
+  }
+  
+  .grid-layout {
+    grid-template-areas: 
+      'foto'
+      'chico'
+      'juego'
+      'friends'
+      'amigos';
+  }
+  
+  .linklogo {
+    display: none;
+  }
+  
+  .c1,
+  .c2,
+  .c3,
+  .c4,
+  .c5 {
+    margin: 10px;
+  }
+h1{
+  justify-self: center;
+  font-size: 40px;
+}
+}
+
+@media screen and (max-width: 480px) {
+  h1 {
+    font-size: 30px;
+    justify-self: center;
+  }
+}
+</style> 
+</head>
   <body>
 <header>
   <div id="encabezado">

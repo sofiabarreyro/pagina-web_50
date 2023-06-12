@@ -3,9 +3,198 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="C:\Users\santiago\Desktop\popi web\ubicacion\ubicacion.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <title>Disconnect</title>
+<style>
+	@import url('https://fonts.googleapis.com/css2?family=Lemon&family=Roboto:wght@300&display=swap');
+  @import url('https://fonts.googleapis.com/css2?family=Righteous&display=swap');
+* {
+  box-sizing: border-box;
+}
+
+header,
+main,
+footer {
+  overflow: hidden;
+}
+
+body {
+  background-image: url("C:/Users/santiago/Desktop/popi web/fotos/fondo2.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  margin: 0;
+  padding: 0;
+  font-family: 'Righteous', cursive;;
+}
+
+header {
+  display: flex;
+  align-items: center;
+  background-color: #333;
+  color: #fff;
+  padding: 10px;
+}
+
+.link {
+  flex: 0.1;
+  width: 15%;
+  height: 100px;
+}
+
+.logo {
+  flex: 0.5;
+  width: 100%;
+  height: 100px;
+  background-image: url("C:/Users/santiago/Desktop/popi web/fotos/logo.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.titulo {
+  flex: 2;
+  text-align: center;
+}
+
+.contenedor {
+  padding: 20px;
+  margin-bottom: 218px;
+  display: grid;
+  grid-template-columns: 80% 20%;
+  grid-gap: 10px;
+}
+
+.mapouter {
+  margin: 10px;
+}
+
+footer {
+  background-color: #333;
+  color: #fff;
+  text-align: center;
+  padding: 10px;
+}
+
+.columna-1,
+.columna-2 {
+  padding: 10px;
+  height: 800px;
+  width: 100%;
+}
+
+.columna-1 {
+  background-color: #01000a;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.columna-2 {
+  background-color: #01000a;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.footer {
+  color: aliceblue;
+  background-color: #01000a;
+  display: grid;
+  grid-template-columns: 70% 15% 15%;
+}
+
+footer{
+  color: aliceblue;
+  background-color: #01000a;
+  display: grid;
+  grid-template-columns: 70% 15% 15%;
+}
+.foot{
+  width: 100%;
+  height: 100px;
+}
+.f1{
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+}
+.f2{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.f3{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.fa-facebook {
+  background: #3B5998;
+  color: white;
+}
+.fa {
+  padding: 30px;
+  font-size: 50px;
+  width: 70px;
+  text-align: center;
+  text-decoration: none;
+  margin: 5px 2px;
+  border-radius: 50%;
+}
+
+.fa:hover {
+    opacity: 0.7;
+}
+.fa-instagram {
+  background: #125688;
+  color: white;
+}
+
+
+.columna-2 a {
+  color: white;
+  text-decoration: underline;
+}
+
+.columna-2 {
+  color: white;
+}
+
+@media screen and (max-width: 1590px) {
+  .link,
+  .logo,
+  .titulo {
+    width: 100%;
+  }
+
+  .logo img {
+    width: 100%;
+    height: auto;
+  }
+
+  .contenedor {
+    grid-template-columns: 100%;
+  }
+
+  .columna-1,
+  .columna-2 {
+    height: auto;
+  }
+
+.gmap_canvas{
+        width: 1200px;
+        height: 540px;
+       
+      
+      }
+      .link {
+        flex: 0.2;
+      }
+ 
+}
+
+</style>
 </head>
 <body>
     <header>
@@ -22,7 +211,15 @@
 	<main>
 		<div class="contenedor">
 			<div class="columna-1">
-				<div class="mapouter"><div class="gmap_canvas"><iframe width="1200" height="800" id="gmap_canvas" src="https://maps.google.com/maps?q=Boulevard+del+Mirador+106%2C+Vista+Bahia+Nordelta+Bahia+Grande%2C+B1670+Buenos+Aires%2C+Provincia+de+Buenos+Aires&t=k&z=17&ie=UTF8&iwloc=&output=embed" frameborder="0" scrolling="no" marginheight="0" marginwidth="0"></iframe><a href="https://online.stopwatch-timer.net/"></a><br><style>.mapouter{position: relative;text-align: right;height: 800px;width: 1200px;}</style><a href="https://www.embedmaps.co">embed google maps api</a><style>.gmap_canvas{overflow: hidden;background: none !important;height: 800px;width: 1200px;}</style></div></div>
+				<div class="mapouter">
+					<div class="gmap_canvas">
+						<iframe width="100%" height="800" id="gmap_canvas" src="https://maps.google.com/maps?q=Boulevard+del+Mirador+106%2C+Vista+Bahia+Nordelta+Bahia+Grande%2C+B1670+Buenos+Aires%2C+Provincia+de+Buenos+Aires&t=k&z=17&ie=UTF8&iwloc=&output=embed" frameborder="0" scrolling="no" marginheight="0" marginwidth="0"></iframe>
+						<a href="https://online.stopwatch-timer.net/"></a>
+						<br><style>.mapouter{position: relative;text-align: right;height: 800px;width: 1200px;}</style>
+						<a href="https://www.embedmaps.co">embed google maps api</a>
+						<style>.gmap_canvas{overflow: hidden;background: none !important;height: 800px;width: 1200px;}</style>
+					</div>
+				</div>
 			</div>
 		<div class="columna-2">
 			<a href="https://www.google.com/maps/search/Boulevard+del+Mirador+106,+Vista+Bahia+Nordelta+Bahia+Grande,+B1670+Buenos+Aires,+Provincia+de+Buenos+Aires/@-34.3957198,-58.6510611,17z/data=!3m1!4b1">UBICACION: Boulevard del Mirador 106, Vista Bahia Nordelta Bahia Grande, B1670 Buenos Aires, Provincia de Buenos Aires</p>
@@ -31,7 +228,7 @@
 		</div>
 	</main>
 	<footer>
-		<div class="foot f1"><h2>© 2023 Disconnect. Todos los derechos reservados</h2></div>
+		<div class="foot f1"><h2>&copy; 2023 Disconnect. Todos los derechos reservados</h2></div>
 		<div class="foot f2"><a href="https://www.instagram.com/disconnect.ar/" class="fa fa-instagram"></a></div>
 		<div class="foot f3"><a href="#" class="fa fa-facebook"></a></div>
 	  </footer>		
